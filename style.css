@@ -177,5 +177,109 @@ button {
     font: inherit;
     font-weight: 600;
     font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: minmax(600px, 900px) auto;
+}
 
+.your-projects .wrapper-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 275px);
+    gap: 15px;
+
+}
+
+.card {
+    width: 275px;
+    height: 240px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(250, 138, 63, 0.137);
+    border-left: 6px solid orange;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card div {
+    font-size: 1rem;
+    font-weight: 350;
+}
+
+.your-projects>*:first-child {
+    margin-bottom: 24px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 12px;
+    font-size: 20px;
+    margin-bottom: 12px;
+
+}
+
+.icons span {
+    font-size: 24px;
+}
+
+.card h5 {
+    padding-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+img {
+    flex: 0 0 auto;
+}
+
+.right-side {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 400px;
+    gap: 24px;
+}
+
+.announcements-section {
+
+    border-radius: 12px;
+
+    grid-row: 1 / 2;
+
+    font-size: 1rem;
+}
+
+.trending-section {
+
+
+
+    grid-row: 2 / 3;
+    font-size: 1rem;
+}
+
+.announcements .announcement {
+    font-weight: 600;
+}
+
+.announcement+hr {
+    border-top: 0.5px solid grey;
+}
+
+.announcement p {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.announcements,
+.trending {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+
+}
+
+.announcements-section>*:first-child,
+.trending-section>*:first-child {
+    margin-bottom: 24px;
+    font-size: 1.3rem;
 }
