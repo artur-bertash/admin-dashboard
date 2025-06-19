@@ -274,12 +274,39 @@ img {
 .trending {
     background-color: white;
     border-radius: 12px;
-    padding: 16px;
+    padding: 14px 38px;
 
 }
 
 .announcements-section>*:first-child,
 .trending-section>*:first-child {
     margin-bottom: 24px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.trending .profile-pic-search {
+    height: 36px;
+    width: 36px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trend .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.trend .profile-wrapper div:last-child {
+    font-weight: 400;
 }
